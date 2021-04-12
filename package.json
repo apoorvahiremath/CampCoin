@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "next build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^9.0.1",
     "ganache-cli": "^6.9.1",
+    "identicon": "^3.0.1",
     "mocha": "^8.0.1",
     "next": "^10.0.5",
     "next-routes": "^1.4.2",

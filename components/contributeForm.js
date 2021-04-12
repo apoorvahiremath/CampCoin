@@ -37,6 +37,7 @@ class ContributeForm extends Component{
     render(){
         return( 
             // <h3>Contribute to this Campaign</h3>
+            <div className="shadow-sm p-3 mb-5 bg-white rounded">
             <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                 <Form.Field>
                     <label>Amount to Contribute</label>
@@ -52,6 +53,7 @@ class ContributeForm extends Component{
 
                 <Button primary loading={this.state.loading}>Contribute!</Button>
             </Form> 
+            </div>
         )
     }
 }

@@ -77,12 +77,12 @@ class CampaignShow extends Component{
                 <h3>Campaign Show</h3> 
                 <Grid>
                     <Grid.Row>
-                        <Grid.Column width={10}>
+                        <Grid.Column >
                             {this.renderCards()}
 
                         </Grid.Column>
 
-                        <Grid.Column width={6}>
+                        {/* <Grid.Column width={6}>
                         <ContributeForm  address={this.props.address} />
                         <br></br>
                         <Link route={`/campaigns/${this.props.address}/requests`}>
@@ -90,18 +90,22 @@ class CampaignShow extends Component{
                                     <Button primary>View Requests</Button>
                                 </a>
                             </Link>
-                        </Grid.Column>
+                        </Grid.Column> */}
                     </Grid.Row>
 
-                    {/* <Grid.Row>
-                        <Grid.Column>
+                    <Grid.Row>
+                        <Grid.Column width={6}>
+                        <ContributeForm  address={this.props.address} />
+                        </Grid.Column>
+                        <Grid.Column width={4}></Grid.Column>
+                        <Grid.Column width={6}>
                         <Link route={`/campaigns/${this.props.address}/requests`}>
                                 <a>
                                     <Button primary>View Requests</Button>
                                 </a>
                             </Link>
                         </Grid.Column>
-                    </Grid.Row> */}
+                    </Grid.Row>
                 </Grid> 
             </Layout>
         )

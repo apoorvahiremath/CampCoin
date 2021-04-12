@@ -12,12 +12,11 @@ export default () => {
                 </a>  
              </Link>
              
-            <Menu.Menu position='right'>
-                <Link route="/">
-                    <a className="item"  style={{color: 'white'}}>Campaigns</a>  
-                </Link><Link route="/campaigns/new">
-                    <a className="item"  style={{color: 'white'}}>+</a>  
-                </Link> 
+            <Menu.Menu position='right'> 
+                    <small className="item"  style={{color: 'white'}}>
+                        Available on - <b>Rinkeby Network</b> 
+                    </small>  
+                 
             </Menu.Menu>
         </Menu>
     )
